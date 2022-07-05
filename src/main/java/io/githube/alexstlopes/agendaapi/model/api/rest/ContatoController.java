@@ -12,6 +12,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/contatos")
 @RequiredArgsConstructor//Cria um construtor com argumentos obrigatórios
+@CrossOrigin("*")
 public class ContatoController {
 
     private final ContatoRepository repository;
