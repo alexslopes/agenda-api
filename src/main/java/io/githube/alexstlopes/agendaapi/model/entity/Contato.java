@@ -24,4 +24,8 @@ public class Contato {
 
     @Column
     private Boolean favorito;//Evite tipo primitivos, wrapers podem possuir valores nulos
+
+    @Column
+    @Lob//notion sinaliza que é um array de bytes
+    private byte[] foto;
 }
